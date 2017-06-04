@@ -1,0 +1,45 @@
+img {
+    height: 300px;
+    margin-bottom: 300px;
+    transition: all 0.5s;
+}
+
+/* Obracanie */
+.rotate img {
+    transform: rotate(20deg)
+}
+
+/* Przesuwanie */
+
+.translate img:hover {
+    transform: translate(400px,100px);
+}
+
+/* Kilka naraz */
+
+.add img:hover {
+    transform: rotate(25deg) translate(500px, 100px);
+}
+
+/* Skalowanie */
+
+.scale img:hover {
+    transform: scale(1.4);
+}
+
+/* Animacja */
+
+.animation img {
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes resize {
+    0%, 100% {
+        height: 300px;
+    }
+    50% {
+        height: 100px;
+    }
+}
